@@ -1,0 +1,160 @@
+body
+  margin: 0
+  overflow-x: hidden
+  font-family: 'Open Sans', sans-serif
+
+.header
+  margin: 40px
+
+.header
+  form
+    max-width: 400px
+    background-color: #a6a8ab
+    border: 1px solid #000000
+    display: table
+
+.searchHeader
+  vertical-align: middle
+
+h1, .searchHeader
+  display: inline-block
+
+.searchHeader
+  display: block
+  margin: auto
+  white-space: nowrap
+  max-width: 400px
+
+h1
+  float: left
+  line-height: 0
+
+input
+  border: 0
+  background-color: #a6a8ab
+  width: 370px
+  height: 40px
+  outline: none
+  vertical-align: middle
+  padding-left: 10px
+
+input
+  &::-webkit-search-cancel-button
+    display: none
+
+label
+ vertical-align: middle
+ display: table-cell
+ margin: 0 5px
+
+.autocomplete
+  position: relative
+  display: table-cell
+
+.grid-container
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr
+  grid-gap: 10px
+  background-color: #a6a8ab
+  padding: 10px
+
+.item4
+  grid-row-start: 1
+  grid-row-end: 3
+  grid-column-start: 4
+  grid-column-end: 5
+
+.item6
+  grid-column-start: 2
+  grid-column-end: 4
+
+img
+  width: 100%
+  height: 100%
+
+.zoom_img
+  img
+    -moz-transition: all 1s ease-out
+    -o-transition: all 1s ease-out
+    -webkit-transition: all 1s ease-out
+
+.zoom_img
+  img
+    &:hover
+      -webkit-transform: scale(1.25)
+      -moz-transform: scale(1.25)
+      -o-transform: scale(1.25)
+
+.grid-container
+  @media screen and (max-width: 1100px)
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+
+.item4
+  @media screen and (max-width: 1100px)
+    grid-row-start: 1
+    grid-row-end: 3
+    grid-column-start: 3
+    grid-column-end: 4
+
+.item6
+  @media screen and (max-width: 1100px)
+    grid-column-start: 1
+    grid-column-end: 3
+
+.grid-container
+  @media screen and (max-width: 780px)
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr
+
+.item4
+  @media screen and (max-width: 780px)
+    grid-row-start: 1
+    grid-row-end: 3
+    grid-column-start: 2
+    grid-column-end: 3
+
+.item6
+  @media screen and (max-width: 780px)
+    grid-column-start: 1
+    grid-column-end: 3
+
+.zoom_img
+  img
+    &:hover
+      @media screen and (max-width: 780px)
+        -webkit-transform: scale(1)
+        -moz-transform: scale(1)
+        -o-transform: scale(1)
+
+h1
+  @media screen and (max-width: 1010px)
+    display: block
+    text-align: center
+    float: none
+
+.searchHeader
+  @media screen and (max-width: 495px)
+    max-width: none
+
+.autocomplete
+  @media screen and (max-width: 495px)
+    width: 100%
+
+input
+  @media screen and (max-width: 495px)
+    width: 150px
+h1
+  @media screen and (max-width: 495px)
+    font-size: 20px
+
+.grid-container
+  @media screen and (max-width: 780px)
+    grid-gap: 5px
+    padding: 5px
+
+.grid-container
+  @media screen and (max-width: 495px)
+    grid-gap: 3px
+    padding: 3px
